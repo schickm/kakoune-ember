@@ -1,3 +1,9 @@
+hook global KakBegin .* %sh{
+    if [ -e ember-cli-build.js ] ; then
+        printf "ember-enable\n"
+    fi
+}
+
 define-command ember-enable \
 -override \
 -docstring 'enable ember add-ins for kakoune' %{
