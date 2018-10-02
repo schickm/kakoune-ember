@@ -14,9 +14,8 @@ define-command ember-enable \
     map global ember <r> ':ember-edit-route ' -docstring 'edit a route'
     map global ember <a> ':ember-edit-adapter ' -docstring 'edit an adapter'
     map global ember <s> ':ember-edit-serializer ' -docstring 'edit a serializer'
-    map global ember <l> ':source ~/vc/dotfiles/kak/ember.kak<ret>'
 
-    map global normal <space> ':enter-user-mode<space>ember<ret>'
+    map global user e ':enter-user-mode<space>ember<ret>' -docstring 'ember commands...'
 }
 
 evaluate-commands %sh{
