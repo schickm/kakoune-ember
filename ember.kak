@@ -32,7 +32,7 @@ evaluate-commands %sh{
 
         printf "
             define-command ember-edit-$thing -override -params 1 \
-            -shell-candidates %%{
+            -shell-script-candidates %%{
 
                 git ls-files | sed -n $sed_args
             } \
