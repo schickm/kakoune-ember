@@ -13,7 +13,8 @@ define-command ember-enable \
     map global ember <o> ':ember-edit-controller ' -docstring 'edit a controller'
     map global ember <r> ':ember-edit-route ' -docstring 'edit a route'
     map global ember <a> ':ember-edit-adapter ' -docstring 'edit an adapter'
-    map global ember <s> ':ember-edit-serializer ' -docstring 'edit a serializer'
+    map global ember <s> ':ember-edit-service ' -docstring 'edit a service'
+    map global ember <S> ':ember-edit-serializer ' -docstring 'edit a serializer'
 
     map global user e ':enter-user-mode<space>ember<ret>' -docstring 'ember commands...'
 }
@@ -47,6 +48,7 @@ evaluate-commands %sh{
     define_edit_command "component" "[tj]s" "true"
     define_edit_command "adapter" "[tj]s"
     define_edit_command "serializer" "[tj]s"
+    define_edit_command "service" "[tj]s"
 }
 
 declare-option -hidden str-to-str-map ember_template_toggle_map
